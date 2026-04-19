@@ -20,6 +20,6 @@
     "index.d.ts"
   ],
   "devDependencies": {
-    "eslint": "10.2.1"
+    "eslint": "^9"
   }
 }
