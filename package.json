@@ -13,13 +13,13 @@
   "license": "GPL-3.0",
   "dependencies": {
     "curve25519-js": "^0.0.4",
-    "protobufjs": "6.8.8"
+    "protobufjs": "^7.5.5"
   },
   "files": [
     "src/*",
     "index.d.ts"
   ],
   "devDependencies": {
-    "eslint": "6.0.1"
+    "eslint": "^9"
   }
 }
