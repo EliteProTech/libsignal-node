@@ -45,5 +45,14 @@ jobs:
       - name: Install Dependencies
         run: yarn install --immutable
 
+      - name: Debug working tree
+        run: |
+          echo "--- git status ---"
+          git status
+          echo "--- git diff (tracked) ---"
+          git diff
+          echo "--- untracked files ---"
+          git ls-files --others --exclude-standard
+
       - name: Release
         run: npx release-it --increment ${{ github.event.inputs.increment }}
